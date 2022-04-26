@@ -163,6 +163,10 @@ header nav .right button:hover {
     color: #fff;
 }
 
+
+
+/* footer */
+
 footer {
     margin: 0;
     padding: 20px;
@@ -173,30 +177,39 @@ footer {
     align-items: center;
 }
 
+footer a {
+    text-decoration: none;
+    color: #ccc;
+}
+
+footer ul li {
+    list-style-type: none;
+}
+
+
 footer h3 {
     color: var(--firebrick);
 }
 
-footer p {
-    cursor: pointer;
+footer li {
     color: #ccc;
 }
 
-footer p:hover {
+footer a:hover {
     color: #fff;
-}
 
+/* responsivity */
 @media screen and (max-width: 640px) {
+    .presentation .image-presentation {
+        display: none;
+    }
+
     header nav .right p {
         display: none;
     }
 
     .presentation .product-presentation h2 {
         font-size: 2em;
-    }
-
-    .presentation .image-presentation {
-        display: none;
     }
 
     .first .product-presentation .small-images .small img {
@@ -209,5 +222,9 @@ footer p:hover {
 
     footer .column {
         width: 80%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
     }
 }
