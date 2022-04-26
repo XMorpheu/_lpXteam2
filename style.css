@@ -134,6 +134,57 @@ header nav .right button:hover {
     width: 120px;
 }
 
+/* second section with local photo */
+
+.image-presentation img {
+    width: 600px;
+}
+
+.second {
+    margin: 0;
+    background-color: #2e1117;
+}
+
+.second .product-presentation .new {
+    color: var(--firebrick);
+}
+
+
+.second .product-presentation button {
+
+    background-color: inherit;
+    border: 1px solid var(--firebrick);
+    color: var(--firebrick);
+    transition: background-color 0.5s, color 0.5s;
+}
+
+.second .product-presentation button:hover {
+    background-color: var(--firebrick);
+    color: #fff;
+}
+
+footer {
+    margin: 0;
+    padding: 20px;
+    background-color: #000;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+footer h3 {
+    color: var(--firebrick);
+}
+
+footer p {
+    cursor: pointer;
+    color: #ccc;
+}
+
+footer p:hover {
+    color: #fff;
+}
 
 @media screen and (max-width: 640px) {
     header nav .right p {
@@ -150,5 +201,13 @@ header nav .right button:hover {
 
     .first .product-presentation .small-images .small img {
         width: 90px;
+    }
+
+    footer {
+        justify-content: start;
+    }
+
+    footer .column {
+        width: 80%;
     }
 }
